@@ -36,55 +36,55 @@
         <div>
           <h6 class="my-3">Senders Information</h6>
           <span>
-            <img src="assets/img/user.png" class="icons mx-1" /> Sender's Full
+            <img src="/assets/img/user.png" class="icons mx-1" /> Sender's Full
             Name: {{ this.data.senderInfo.name }} </span
           ><br />
           <span>
-            <img src="assets/img/mail.png" class="icons mx-1" /> Sender's Email
+            <img src="/assets/img/mail.png" class="icons mx-1" /> Sender's Email
             Address: {{ this.data.senderInfo.email }} </span
           ><br />
           <span>
-            <img src="assets/img/world.png" class="icons mx-1" /> Sender's
+            <img src="/assets/img/world.png" class="icons mx-1" /> Sender's
             Address: {{ this.data.senderInfo.address }} </span
           ><br />
           <span>
-            <img src="assets/img/world.png" class="icons mx-1" /> Sender's City:
+            <img src="/assets/img/world.png" class="icons mx-1" /> Sender's City:
             {{ this.data.senderInfo.city }} </span
           ><br />
           <span>
-            <img src="assets/img/world.png" class="icons mx-1" /> Sender Country:
+            <img src="/assets/img/world.png" class="icons mx-1" /> Sender Country:
             {{ this.data.senderInfo.country }}
           </span>
         </div>
         <div class="my-3">
           <h6 class="my-2">Receiver's Information</h6>
           <span>
-            <img src="assets/img/user.png" class="icons mx-1" /> Receiver's Name:
+            <img src="/assets/img/user.png" class="icons mx-1" /> Receiver's Name:
             {{ this.data.receiverInfo.name }} </span
           ><br />
           <span>
-            <img src="assets/img/mail.png" class="icons mx-1" />
+            <img src="/assets/img/mail.png" class="icons mx-1" />
             Receiver's Email Address: {{ this.data.receiverInfo.email }} </span
           ><br />
           <span>
-            <img src="assets/img/phone.png" class="icons mx-1" /> Receiver's
+            <img src="/assets/img/phone.png" class="icons mx-1" /> Receiver's
             Number: {{ this.data.receiverInfo.phone }} </span
           ><br />
           <span>
-            <img src="assets/img/world.png" class="icons mx-1" /> Delievery
+            <img src="/assets/img/world.png" class="icons mx-1" /> Delievery
             Address: {{ this.data.receiverInfo.address }} </span
           ><br />
           <span>
-            <img src="assets/img/world.png" class="icons mx-1" /> Delievery City:
+            <img src="/assets/img/world.png" class="icons mx-1" /> Delievery City:
             {{ this.data.receiverInfo.city }} </span
           ><br />
           <span>
-            <img src="assets/img/world.png" class="icons mx-1" /> Delievery
+            <img src="/assets/img/world.png" class="icons mx-1" /> Delievery
             Country: {{ this.data.receiverInfo.country }}
           </span>
           <br />
           <span>
-            <img src="assets/img/world.png" class="icons mx-1" /> Postal Code:
+            <img src="/assets/img/world.png" class="icons mx-1" /> Postal Code:
             {{ this.data.receiverInfo.postCode }} </span
           ><br />
           <span
@@ -95,31 +95,31 @@
         <div class="my-3">
           <h6 class="my-2">Delivery Information</h6>
           <span>
-            <img src="assets/img/cargo.png" class="icons mx-1" /> Trasport Method
+            <img src="/assets/img/cargo.png" class="icons mx-1" /> Trasport Method
             {{ this.data.transportMethod }} </span
           ><br />
           <span>
-            <img src="assets/img/cargo.png" class="icons mx-1" /> Cargo Frieght
+            <img src="/assets/img/cargo.png" class="icons mx-1" /> Cargo Frieght
             Charge: {{ this.data.paymentMethod }} </span
           ><br />
           <span>
-            <img src="assets/img/cargo.png" class="icons mx-1" /> Delievery Date:
+            <img src="/assets/img/cargo.png" class="icons mx-1" /> Delievery Date:
             {{ this.data.deliveryDate }} </span
           ><br />
           <span>
-            <img src="assets/img/cargo.png" class="icons mx-1" /> Goods Damage
+            <img src="/assets/img/cargo.png" class="icons mx-1" /> Goods Damage
             Safety: {{ this.data.insurance }} </span
           ><br />
           <span>
-            <img src="assets/img/cargo.png" class="icons mx-1" /> Weight:
+            <img src="/assets/img/cargo.png" class="icons mx-1" /> Weight:
             {{ this.data.weight }} </span
           ><br />
           <span>
-            <img src="assets/img/cargo.png" class="icons mx-1" /> Number of
+            <img src="/assets/img/cargo.png" class="icons mx-1" /> Number of
             Consignment: {{ this.data.numberOfGoods }} </span
           ><br />
           <span>
-            <img src="assets/img/cargo.png" class="icons mx-1" /> Delivery Status: Pending </span
+            <img src="/assets/img/cargo.png" class="icons mx-1" /> Delivery Status: Pending </span
           ><br />
         </div>
       </div>

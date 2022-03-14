@@ -5,7 +5,7 @@
 
           <h1 class="logo me-auto"><a @click="$router.push('/')">Sailor</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+          <!-- <a href="index.html" class="logo me-auto"><img src="/assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
           <nav id="navbar" :class="[!state.mobileOpen ? 'navbar' : 'navbar navbar-mobile']">
             <ul>
