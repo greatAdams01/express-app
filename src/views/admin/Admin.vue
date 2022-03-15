@@ -273,12 +273,12 @@
               <div>Receiver Name: {{ parcel.receiverInfo.name }}</div>
               <div>{{ parcel._id }}</div>
             </div>
-            <div>
+            <div class="move-left">
               <input
                 type="button"
                 value="Delete"
                 class="p-2 openbtn2"
-                @click="deleteParcel(index)"
+                @click="deleteParcel(parcel._id)"
               />
             </div>
           </div>
@@ -290,7 +290,7 @@
 
 <script>
 const token = localStorage.getItem('token')
-// const userData = JSON.parse(Token)
+const userToken = JSON.parse(token)
 // import { mapMutations } from "vuex";
 export default {
   // middleware: "authenticated",
@@ -333,11 +333,10 @@ export default {
   },
   methods: {
     getParcels() {
-      console.log(this.adminToken)
-      fetch("https://quintessential.herokuapp.com/api", {
+      fetch("https://peak-express.herokuapp.com/api", {
       headers: {
         "Content-type": "application/json; charset=UTF-8",
-        Authorization: `Bearer ${this.adminToken}`,
+        Authorization: `Bearer ${userToken}`,
       },
       method: "POST",
       body: JSON.stringify({
@@ -345,6 +344,7 @@ export default {
               query {
                 parcels {
                   _id
+                  parcelName
                   receiverInfo{
                     name
                   }
@@ -361,22 +361,22 @@ export default {
       });
     },
     // ...mapMutations(["userLoggedOut"]),
-    deleteParcel(index) {
-      fetch("https://quintessential.herokuapp.com/api", {
-        headerrs: {
+    deleteParcel(id) {
+      fetch("https://peak-express.herokuapp.com/api", {
+        headers: {
           "Content-type": "application/json; charset=UTF-8",
-          Authorization: `Bearer ${this.adminToken}`,
+          Authorization: `Bearer ${userToken}`,
         },
         method: "POST",
         body: JSON.stringify({
           query: `
-            query{
-              deleteParcel(parcelId:"${this.parcels[index]._id}"){
+            query {
+              deleteParcel(parcelId: "${id}"){
                 parcelName
               }
             }
           `,
-        }),
+        })
       })
         .then((res) => res.json())
         .then((result) => {
@@ -388,10 +388,10 @@ export default {
       this.$router.push("/login");
     },
     updateUser() {
-      fetch("https://quintessential.herokuapp.com/api", {
+      fetch("https://peak-express.herokuapp.com/api", {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
-          Authorization: `Bearer ${this.adminToken}`,
+          Authorization: `Bearer ${userToken}`,
         },
         method: "POST",
         body: JSON.stringify({
@@ -414,10 +414,10 @@ export default {
         });
     },
     updateInfo() {
-      fetch("https://quintessential.herokuapp.com/api", {
+      fetch("https://peak-express.herokuapp.com/api", {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
-          Authorization: `Bearer ${this.adminToken}`,
+          Authorization: `Bearer ${userToken}`,
         },
         method: "POST",
         body: JSON.stringify({
@@ -526,6 +526,9 @@ export default {
 }
 input {
   width: 100%;
+}
+.move-left {
+  margin-left: 30px;
 }
 @media (max-width: 600px) {
   .sidepanel {

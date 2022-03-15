@@ -68,6 +68,7 @@
 <script>
 // import { mapMutations } from "vuex";
 const token = localStorage.getItem('token')
+const userToken = JSON.parse(token)
 export default {
   // middleware: "authenticated",
   data() {
@@ -86,10 +87,10 @@ export default {
       this.$router.push("/login");
     },
     submit() {
-      fetch("https://quintessential.herokuapp.com/api", {
+      fetch("https://peak-express.herokuapp.com/api", {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${userToken}`,
         },
         method: "POST",
         body: JSON.stringify({

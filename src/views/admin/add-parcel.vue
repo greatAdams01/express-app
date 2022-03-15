@@ -248,6 +248,7 @@
 <script>
 // import { mapMutations } from "vuex";
 const token = localStorage.getItem('token')
+const userToken = JSON.parse(token)
 export default {
   middleware: "authenticated",
   data() {
@@ -281,10 +282,10 @@ export default {
   methods: {
     // ...mapMutations(["userLoggedOut"]),
     submit() {
-      fetch("https://quintessential.herokuapp.com/api", {
+      fetch("https://peak-express.herokuapp.com/api", {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
-          Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWE0ZGUxYjNlNGY2YjBiMGZkYWVkYTYiLCJlbWFpbCI6ImFkbWluMTIzQGdtYWlsLmNvbSIsImlhdCI6MTYzODE5NDc5NiwiZXhwIjoxNjQwNzg2Nzk2fQ.rbKpdqwGZaXtnFbk5l_QspTyMOh_hjG8mDe2t53wRBY`,
+          Authorization: `Bearer ${userToken}`,
         },
 
         method: "POST",
@@ -333,6 +334,9 @@ export default {
           // console.log(result);
           this.$router.push("/admin");
         });
+        // .catch((e) => {
+        //   console.log(e)
+        // })
     },
     logout() {
       localStorage.removeItem('token')

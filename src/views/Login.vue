@@ -30,7 +30,7 @@ export default {
   methods: {
     // ...mapMutations(["userLoggedIn"]),
     login() {
-      fetch("https://quintessential.herokuapp.com/api", {
+      fetch("https://peak-express.herokuapp.com/api", {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },
