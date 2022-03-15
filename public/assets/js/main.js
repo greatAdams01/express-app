@@ -1,6 +1,6 @@
 /**
-* Template Name: Sailor - v4.7.0
-* Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+* Template Name: PeakExpress - v4.7.0
+* Template URL: https://bootstrapmade.com/PeakExpress-free-bootstrap-theme/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */

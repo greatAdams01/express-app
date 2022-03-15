@@ -11,7 +11,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>About</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a @click="$router.push('/')">Home</a></li>
             <li>About</li>
           </ol>
         </div>
@@ -21,7 +21,7 @@
 
     <section class="intro">
       <div class="container">
-        <p>Over 25 years in the making we have a long history as part of the Royal Mail Group, but in 1986 Royal Mail created a separate parcel function forming the foundations of the business we know today. In 1990 Royal Mail Parcels was rebranded to fiduciaryexpress, along with a massive investment in IT and infrastructure with the introduction of online tracking and the construction of our National and International sorting hubs. Then in 1998 the business was rebranded to fiduciaryexpress Worldwide. The last decade has seen us move into the express parcels market with further investment in technology which enables us to provide our exceptional quality of service. In 2013 we continued investing in the future of our business, enabling us to further enhance our network with 12 new and improved depots. Along with building a brand new processing center in the North West with industry-leading technology; ensuring that we can continue to handle your parcels with greater speed and precision, so we are best placed to meet the rapid growth in demand within the express parcels market.</p>
+        <p>Over 25 years in the making we have a long history as part of the Royal Mail Group, but in 1986 Royal Mail created a separate parcel function forming the foundations of the business we know today. In 1990 Royal Mail Parcels was rebranded to PeakExpress, along with a massive investment in IT and infrastructure with the introduction of online tracking and the construction of our National and International sorting hubs. Then in 1998 the business was rebranded to PeakExpress Worldwide. The last decade has seen us move into the express parcels market with further investment in technology which enables us to provide our exceptional quality of service. In 2013 we continued investing in the future of our business, enabling us to further enhance our network with 12 new and improved depots. Along with building a brand new processing center in the North West with industry-leading technology; ensuring that we can continue to handle your parcels with greater speed and precision, so we are best placed to meet the rapid growth in demand within the express parcels market.</p>
       </div>
     </section>
 

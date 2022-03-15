@@ -16,11 +16,11 @@ import Footer from '../components/Footer.vue'
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(/assets/img/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg)">
+        <div class="carousel-item active" style="background-image: url(/assets/img/gabriel-santos-GBVDilE8yvI-unsplash.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Sailor</span></h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>PeakExpress</span></h2>
+              <p class="animate__animated animate__fadeInUp">We offer rapid and flexible delivery to your doorstep</p>
               <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
             </div>
           </div>
@@ -39,23 +39,20 @@ import Footer from '../components/Footer.vue'
 
         <div class="row content">
           <div class="col-lg-6">
-            <h2>Eum ipsam laborum deleniti velitena</h2>
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
+            <h2>Taking Delivery to it's peak</h2>
+            <h3>We operate at the premium end of the parcels market, and do everything we can to satisfy the needs of our customers i.e being reliable, being available, and in the event that things go wrong; being willing to go the extra mile to resolve the issue. With great management our progress over the years has been a successive rise, We've kept the records straight as our client base spanned across the globe. We've maintain a concrete security system, to ensure the safety of parcels.</h3>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              Over 25 years in the making we have a long history as part of the Royal Mail Group, but in 1986 Royal Mail created a separate parcel function forming the foundations of the business we know today. In 1990 Royal Mail Parcels was rebranded to fiduciaryexpress, along with a massive investment in IT and infrastructure with the introduction of online tracking and the construction of our National and International sorting hubs.
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
+              <li><i class="ri-check-double-line"></i> Speedy Delivery</li>
+              <li><i class="ri-check-double-line"></i> Safe warehousing</li>
+              <li><i class="ri-check-double-line"></i> PACKAGING</li>
             </ul>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Our mission is to provide trouble free courier service on a consistent basis. We show care and respect for each other and we show care and respect for each package we handle.
             </p>
           </div>
         </div>
@@ -159,8 +156,8 @@ import Footer from '../components/Footer.vue'
               <img src="https://demo.proteusthemes.com/cargopress/wp-content/uploads/sites/24/2015/04/32-360x240.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Cargo</h5>
-                <p class="card-text">Already for 25 years, fiduciaryexpress has been organizing international transportation. Express delivery is an innovative service and an effective logistics solution for the delivery of small cargo. This service is useful for companies of various</p>
-                <p>Read more</p>
+                <p class="card-text">Already for 25 years, PeakExpress has been organizing international transportation. Express delivery is an innovative service and an effective logistics solution for the delivery of small cargo. This service is useful for companies of various</p>
+                <p class="link-it" @click="$router.push('/cargo')">Read more</p>
               </div>
             </div>
           </div>
@@ -170,7 +167,7 @@ import Footer from '../components/Footer.vue'
               <div class="card-body">
                 <h5 class="card-title">Logistic Service</h5>
                 <p class="card-text">We offer the full range of courier services at competitive prices: sameday couriers, on-demand and scheduled, overnight and international deliveries, logistics and distribution solutions. We recognise that a high-quality courier service requires…</p>
-                <p>Read more</p>
+                <p @click="$router.push('/logistic')" class="link-it">Read more</p>
               </div>
             </div>
           </div>
@@ -180,7 +177,7 @@ import Footer from '../components/Footer.vue'
               <div class="card-body">
                 <h5 class="card-title">Storage</h5>
                 <p class="card-text">We take pride in catering to a broad range of clientele throughout the country with our warehousing services, which is comprehensive, reliable and flexible – qualities that are essential to help businesses in this market. Our experienced experts …</p>
-                <p>Read more</p>
+                <p @click="$router.push('/storage')" class="link-it">Read more</p>
               </div>
             </div>
           </div>
@@ -191,7 +188,7 @@ import Footer from '../components/Footer.vue'
     <section class="container-fluid our-values text-center">
       <div class="content">
         <h2>OUR CORE VALUES</h2>
-        <p>WRITTEN BY FiduciaryExpress CEO</p>
+        <p>WRITTEN BY PeakExpress CEO</p>
         <hr>
         <p>Over the years we have done so much by synergy of intellects by different people. I am so much grateful to my team of staff who relentlessly worked hard to make this brand a success. The last decade has seen us move into the express parcels market with further investment in technology which enables us to provide our exceptional quality of service. In 2013 we continued investing in the future of our business, enabling us to further enhance our network with 12 new and improved depots.. All are the total efforst of my team.</p>
       </div>
@@ -202,3 +199,9 @@ import Footer from '../components/Footer.vue'
   <Footer />
   </div>
 </template>
+
+<style>
+.link-it {
+  cursor: pointer;
+}
+</style>

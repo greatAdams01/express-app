@@ -58,6 +58,30 @@ const router = createRouter({
       component: () => import('../views/admin/add-location.vue')
     },
     {
+      path: '/cargo',
+      name: 'Cargo',
+      // route level code-splitting
+      // this generates a separate chunk (Login.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Cargo.vue')
+    },
+    {
+      path: '/storage',
+      name: 'Storage',
+      // route level code-splitting
+      // this generates a separate chunk (Login.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/storage.vue')
+    },
+    {
+      path: '/logistic',
+      name: 'Logistic',
+      // route level code-splitting
+      // this generates a separate chunk (Login.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Logic.vue')
+    },
+    {
       path: '/contact',
       name: 'Contact',
       // route level code-splitting
