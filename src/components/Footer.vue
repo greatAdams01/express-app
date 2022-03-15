@@ -11,8 +11,8 @@
               <p>
                 A108 Adam Street <br>
                 NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@peakexpress.com<br>
+                <strong>Phone:</strong> +1(424)-260-8521<br>
+                <strong>Email:</strong> info@peak-express.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>

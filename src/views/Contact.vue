@@ -34,13 +34,13 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@peakexpress.com</p>
+                <p>info@peak-express.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+1(424)-260-8521s</p>
               </div>
 
             </div>
@@ -128,7 +128,7 @@ const onSubmit = async () => {
         subject: state.subject,
         message: state.message
       }
-      const response = await fetch('https://formsubmit.co/ajax/info@peakexpress.com', {
+      const response = await fetch('https://formsubmit.co/ajax/info@peak-express.com', {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         headers: {
           'Content-Type': 'application/json'
