@@ -13,7 +13,7 @@
         class="p-2 border"
       />
       <input @click="submit" type="button" class="p-2 btn3" value="TRACK" />
-      <input @click="callServer" type="button" class="p-2 btn3" value="Fire!!" />
+      <!-- <input @click="callServer" type="button" class="p-2 btn3" value="Fire!!" /> -->
     </div>
     <div v-else class="m-lg-5 m-4 d-lg-flex">
       <div>
@@ -226,29 +226,6 @@ import Footer from '../components/Footer.vue'
           this.data = result.data.singleParcel;
           this.progress = result.data.singleParcel.locations;
           this.search = true;
-        });
-    },
-
-    callServer () {
-        const data = {
-          email: "kingifean@gmail.com",
-          password: "state.password"
-        }
-        
-        // store.dispatch('auth/login', data)
-        fetch('https://vicsites.herokuapp.com/accounts/auth/token/login', {
-          method: 'POST', // or 'PUT'
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data),
-        })
-        .then(response => response.json())
-        .then(data => {
-          console.log('Success:', data);
-        })
-        .catch((error) => {
-          console.error('Error:', error);
         });
     }
   },
