@@ -13,6 +13,7 @@
         class="p-2 border"
       />
       <input @click="submit" type="button" class="p-2 btn3" value="TRACK" />
+      <input @click="callServer" type="button" class="p-2 btn3" value="Fire!!" />
     </div>
     <div v-else class="m-lg-5 m-4 d-lg-flex">
       <div>
@@ -71,15 +72,15 @@
             Number: {{ this.data.receiverInfo.phone }} </span
           ><br />
           <span>
-            <img src="/assets/img/world.png" class="icons mx-1" /> Delievery
+            <img src="/assets/img/world.png" class="icons mx-1" /> Delivery
             Address: {{ this.data.receiverInfo.address }} </span
           ><br />
           <span>
-            <img src="/assets/img/world.png" class="icons mx-1" /> Delievery City:
+            <img src="/assets/img/world.png" class="icons mx-1" /> Delivery City:
             {{ this.data.receiverInfo.city }} </span
           ><br />
           <span>
-            <img src="/assets/img/world.png" class="icons mx-1" /> Delievery
+            <img src="/assets/img/world.png" class="icons mx-1" /> Delivery
             Country: {{ this.data.receiverInfo.country }}
           </span>
           <br />
@@ -103,7 +104,7 @@
             Charge: {{ this.data.paymentMethod }} </span
           ><br />
           <span>
-            <img src="/assets/img/cargo.png" class="icons mx-1" /> Delievery Date:
+            <img src="/assets/img/cargo.png" class="icons mx-1" /> Delivery Date:
             {{ this.data.deliveryDate }} </span
           ><br />
           <span>
@@ -227,6 +228,29 @@ import Footer from '../components/Footer.vue'
           this.search = true;
         });
     },
+
+    callServer () {
+        const data = {
+          email: "kingifean@gmail.com",
+          password: "state.password"
+        }
+        
+        // store.dispatch('auth/login', data)
+        fetch('https://vicsites.herokuapp.com/accounts/auth/token/login', {
+          method: 'POST', // or 'PUT'
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
   },
 };
 </script>
