@@ -333,7 +333,7 @@ export default {
   },
   methods: {
     getParcels() {
-      fetch("https://peak-express.herokuapp.com/api", {
+      fetch("https://ontime-shipping.herokuapp.com/api", {
       headers: {
         "Content-type": "application/json; charset=UTF-8",
         Authorization: `Bearer ${userToken}`,
@@ -362,7 +362,7 @@ export default {
     },
     // ...mapMutations(["userLoggedOut"]),
     deleteParcel(id) {
-      fetch("https://peak-express.herokuapp.com/api", {
+      fetch("https://ontime-shipping.herokuapp.com/api", {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
           Authorization: `Bearer ${userToken}`,
@@ -388,7 +388,7 @@ export default {
       this.$router.push("/login");
     },
     updateUser() {
-      fetch("https://peak-express.herokuapp.com/api", {
+      fetch("https://ontime-shipping.herokuapp.com/api", {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
           Authorization: `Bearer ${userToken}`,
@@ -414,7 +414,7 @@ export default {
         });
     },
     updateInfo() {
-      fetch("https://peak-express.herokuapp.com/api", {
+      fetch("https://ontime-shipping.herokuapp.com/api", {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
           Authorization: `Bearer ${userToken}`,

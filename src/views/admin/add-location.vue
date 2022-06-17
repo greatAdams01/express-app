@@ -87,7 +87,7 @@ export default {
       this.$router.push("/login");
     },
     submit() {
-      fetch("https://peak-express.herokuapp.com/api", {
+      fetch("https://ontime-shipping.herokuapp.com/api", {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
           Authorization: `Bearer ${userToken}`,
