@@ -178,7 +178,7 @@ import Footer from '../components/Footer.vue'
   },
   methods: {
     submit() {
-      fetch("https://peak-express.herokuapp.com/api", {
+      fetch("https://peak-express.onrender.com/api", {
         headers: {
           "Content-type": "application/json; charset=UTF-8"
         },
